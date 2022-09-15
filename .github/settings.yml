@@ -1,8 +1,8 @@
 # These settings are synced to GitHub by https://probot.github.io/apps/settings/
 repository:
-  name: zim-kn
-  description: zim module for kn
-  topics: zim, zimfw, module, zsh, kn
+  name: zim-chezmoi
+  description: zim module for chezmoi
+  topics: zim, zimfw, module, zsh, chezmoi
   private: false
   has_issues: true
   has_projects: false
