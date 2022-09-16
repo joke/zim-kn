@@ -1,10 +1,9 @@
-local command="${commands[kn]:-${commands[asdf]:+$(asdf which kn)}}"
+(( ${+commands[kn]} || ${+commands[asdf]} && ${+functions[_direnv_hook]} )) && () {
 
-if (( ! ${+command} )); then
-  return 1
-fi
+  local command=${commands[kn]:-"$(${commands[asdf]} which kn 2> /dev/null)"}
+  [[ -z $command ]] && return 1
 
-local compfile=${0:h}/functions/_kn
-if [[ ! -e $compfile || $compfile -ot $command ]]; then
-  $command completion zsh >| $compfile
-fi
+  local compfile=$1/functions/_kn
+  [[ ! -e $compfile || $compfile -ot $command ]] && $command completion zsh >| $compfile
+
+} ${0:h}
