@@ -8,6 +8,4 @@
     $command completions zsh >| $compfile
     zimfw check-dumpfile
   fi
-
-  source <($command init zsh --print-full-init)
 } ${0:h}
