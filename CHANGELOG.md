@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://github.com/joke/zim-kn/compare/v1.1.0...v1.1.1) (2022-09-17)
+
+
+### Bug Fixes
+
+* script error ([201270f](https://github.com/joke/zim-kn/commit/201270f2074a69617e1b3c84b9d6eda8348e529f))
+
 ## [1.1.0](https://github.com/joke/zim-kn/compare/v1.0.1...v1.1.0) (2022-09-17)
 
 
