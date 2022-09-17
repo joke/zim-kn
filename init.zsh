@@ -4,6 +4,10 @@
   [[ -z $command ]] && return 1
 
   local compfile=$1/functions/_kn
-  [[ ! -e $compfile || $compfile -ot $command ]] && $command completion zsh >| $compfile
+  if [[ ! -e $compfile || $compfile -ot $command ]]; then
+    $command completions zsh >| $compfile
+    zimfw check-dumpfile
+  fi
 
+  source <($command init zsh --print-full-init)
 } ${0:h}
