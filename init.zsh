@@ -5,7 +5,7 @@
 
   local compfile=$1/functions/_kn
   if [[ ! -e $compfile || $compfile -ot $command ]]; then
-    $command completions zsh >| $compfile
+    $command completion zsh >| $compfile
     zimfw check-dumpfile
   fi
 } ${0:h}
