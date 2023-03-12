@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/joke/zim-kn/compare/v1.1.2...v1.1.3) (2023-03-12)
+
+
+### Bug Fixes
+
+* new version detection message ([314135f](https://github.com/joke/zim-kn/commit/314135f6f6a51abacdc20765efaa5e9105a60f2c))
+
 ### [1.1.2](https://github.com/joke/zim-kn/compare/v1.1.1...v1.1.2) (2022-09-18)
 
 
